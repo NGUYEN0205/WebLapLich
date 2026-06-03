@@ -152,9 +152,9 @@ export default function SubjectManager({ subjects, onUpdateSubjects }: SubjectMa
   const activeSubject = subjects.find((s) => s.id === selectedSubId);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6" id="subject-manager">
+    <div className="grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-1 gap-6" id="subject-manager">
       {/* Subject List Panel */}
-      <div className="lg:col-span-5 bg-white shadow-sm border border-slate-100 rounded-xl p-5 flex flex-col h-[520px]">
+      <div className="lg:col-span-5 xl:col-span-1 bg-white shadow-sm border border-slate-100 rounded-xl p-5 flex flex-col h-[520px] xl:h-[350px]">
         <h3 className="text-base font-semibold text-slate-800 mb-4 flex items-center gap-2">
           <BookOpen className="w-5 h-5 text-blue-500" />
           Danh sách môn dự kiến ({subjects.length})
@@ -242,7 +242,7 @@ export default function SubjectManager({ subjects, onUpdateSubjects }: SubjectMa
       </div>
 
       {/* Class Section Panel of current selected subject */}
-      <div className="lg:col-span-7 bg-white shadow-sm border border-slate-100 rounded-xl p-5 flex flex-col h-[520px]">
+      <div className="lg:col-span-7 xl:col-span-1 bg-white shadow-sm border border-slate-100 rounded-xl p-5 flex flex-col h-[520px] xl:h-[620px]">
         {activeSubject ? (
           <>
             <div className="flex items-center gap-2 mb-3 shrink-0">
@@ -252,7 +252,7 @@ export default function SubjectManager({ subjects, onUpdateSubjects }: SubjectMa
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 min-h-0 overflow-y-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-4 flex-1 min-h-0 overflow-y-auto">
               {/* Form to Add Section */}
               <div className="border border-slate-100 bg-slate-50/50 p-4 rounded-xl flex flex-col justify-between overflow-y-auto">
                 <form onSubmit={handleAddSection} className="space-y-3">
