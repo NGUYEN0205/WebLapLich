@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Web quản lý lập lịch",
+  "description": "Ứng dụng web giúp sinh viên tối ưu hóa sắp xếp thời khóa biểu tự động và giải quyết xung đột lịch học.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
